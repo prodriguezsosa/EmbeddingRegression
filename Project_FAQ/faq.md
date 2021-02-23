@@ -7,4 +7,4 @@ A la Carte embedding (ALC) was proposed by [Khodak et al. (2018)]{https://arxiv.
 
 ## 2.  What is ConText?
 
-\texttt{ConText} is a regression-like hypothesis-testing framework for embeddings. We place ALC in a regression setting that allows for fast solutions to queries of the type “do authors with these covariate values use these terms in a different way than authors with different covariate values? If yes, how do they differ?”
+_ConText_ is a regression-like hypothesis-testing framework for embeddings. We place ALC in a regression setting that allows for fast solutions to queries of the type “do authors with these covariate values use these terms in a different way than authors with different covariate values? If yes, how do they differ?”
