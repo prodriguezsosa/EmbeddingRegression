@@ -32,13 +32,9 @@ Unfortunately, the averaging approach does not quite work in practice. In partic
 
 Usually in social science, if we want to measure how members of different groups differ with respect to some outcome, we run a regression of the following form:
 
-h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
-
 Y = &beta;<sub>0</sub> + &beta;<sub>1</sub> X<sub>1</sub> + error
 
-Y = b_0 + b_1X_1 + error.
-
-Here, X_1 is our group membership variable, and for now let us assume it is binary. The coefficient, b_1, tells us how the outcome (Y) differs, on average, for different groups. Of course, we might put many more variables on the right hand side---and thus have a *multiple* regression---but the basic logic is the same.
+Here, X<sub>1</sub> is our group membership variable, and for now let us assume it is binary. The coefficient, &beta;<sub>1</sub>, tells us how the outcome (Y) differs, on average, for different groups. Of course, we might put many more variables on the right hand side---and thus have a *multiple* regression---but the basic logic is the same.
 
 To extend our running example, suppose we have a large number of American and British English and we want to know how those two *groups* differ in terms of their understanding of the word "chips". We made the point above that the embedding of "chips" is one way of numerically recording its meaning. And we also said that, even if "chips" is a rare word, we can still obtain an embedding for it via the a la carte technique mentioned. In fact, in some experiments we did, we found that we can get good embeddings for every *use* of every term by every speaker. Analogously, we can get a reasonable representation of "chips" for every single time a person uses that term, so long as we know the context in which they used.
 
