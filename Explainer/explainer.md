@@ -33,6 +33,9 @@ Unfortunately, the averaging approach does not quite work in practice. In partic
 Usually in social science, if we want to measure how members of different groups differ with respect to some outcome, we run a regression of the following form:
 
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
+
+Y = &beta;</sub>0 + &beta;</sub>1 X;</sub>1 + error
+
 Y = b_0 + b_1X_1 + error.
 
 Here, X_1 is our group membership variable, and for now let us assume it is binary. The coefficient, b_1, tells us how the outcome (Y) differs, on average, for different groups. Of course, we might put many more variables on the right hand side---and thus have a *multiple* regression---but the basic logic is the same.
