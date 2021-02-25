@@ -32,7 +32,9 @@ Unfortunately, the averaging approach does not quite work in practice. In partic
 
 Usually in social science, if we want to measure how members of different groups differ with respect to some outcome, we run a [(linear) regression](https://en.wikipedia.org/wiki/Linear_regression) of the following form:
 
+<p align="center">
 Y = &beta;<sub>0</sub> + &beta;<sub>1</sub> X<sub>1</sub> + error
+</p>
 
 Here, X<sub>1</sub> is our group membership variable, and for now let us assume it is binary. The coefficient, &beta;<sub>1</sub> (or our estimate of it), tells us how the outcome (Y) differs, on average, for different groups. Of course, we might put many more variables on the right hand side---and thus have a *multiple* regression---but the basic logic is the same.
 
