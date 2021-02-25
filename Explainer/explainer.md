@@ -1,5 +1,6 @@
 # Embedding Regression: A Non-Technical Explainer
-## (A Work in Progress)
+
+Our [paper](https://github.com/prodriguezsosa/EmbeddingRegression/blob/main/Paper/RodriguezSpirlingStewart_EmbedRegression.pdf) is technical in places, but the central ideas are simple and straightforward.  Below we lay out a non-technical account of what we do for a social science audience potentially unfamiliar with embeddings.  Below each section, you will find a "too long, didn't read" summary.  
 
 
 ## 1. Meaning as Context
