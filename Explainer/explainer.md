@@ -32,11 +32,13 @@ Unfortunately, the averaging approach does not quite work in practice. In partic
 
 Usually in social science, if we want to measure how members of different groups differ with respect to some outcome, we run a [(linear) regression](https://en.wikipedia.org/wiki/Linear_regression) of the following form:
 
+<p align="center">
 Y = &beta;<sub>0</sub> + &beta;<sub>1</sub> X<sub>1</sub> + error
+</p>
 
 Here, X<sub>1</sub> is our group membership variable, and for now let us assume it is binary. The coefficient, &beta;<sub>1</sub> (or our estimate of it), tells us how the outcome (Y) differs, on average, for different groups. Of course, we might put many more variables on the right hand side---and thus have a *multiple* regression---but the basic logic is the same.
 
-To extend our running example, suppose we have a large number of American and British English and we want to know how those two *groups* differ in terms of their understanding of the word "chips". We made the point above that the embedding of "chips" is one way of numerically recording its meaning. And we also said that, even if "chips" is a rare word, we can still obtain an embedding for it via the a la carte technique mentioned. In fact, in some experiments we did, we found that we can get good embeddings for every *use* of every term by every speaker. Analogously, we can get a reasonable representation of "chips" for every single time a person uses that term, so long as we know the context in which they used.
+To extend our running example, suppose we have a large number of American and British English speakers and speeches. We want to know how those two *groups* differ in terms of their understanding of the word "chips". We made the point above that the embedding of "chips" is one way of numerically recording its meaning. And we also said that, even if "chips" is a rare word, we can still obtain an embedding for it via the a la carte technique mentioned. In fact, in some experiments we did, we found that we can get good embeddings for every *use* of every term by every speaker. Analogously, we can get a reasonable representation of "chips" for every single time a person uses that term, so long as we know the context in which they used.
 
 The problem now is an obvious one: the (linear) multiple regression framework above accepts a single outcome value for each observation. But embeddings are long: as we said, typically vectors with length of 100 or 300. The solution is to move to a [*multivariate* regression framework](https://rss.onlinelibrary.wiley.com/doi/pdf/10.1111/1467-9868.00054), common when one has multiple responses. The key idea is that, now, the dimensions of the beta coefficient also expand: it is the same length as the vectors we are using for the embeddings themselves. Running this regression is now very fast and straightforward, but some care is required in interpreting its results.
 
