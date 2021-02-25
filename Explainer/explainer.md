@@ -34,7 +34,7 @@ Usually in social science, if we want to measure how members of different groups
 
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
-Y = &beta;</sub>0 + &beta;</sub>1 X;</sub>1 + error
+Y = &beta<sub>0</sub> + &beta;<sub>1</sub> X;<sub>1</sub> + error
 
 Y = b_0 + b_1X_1 + error.
 
