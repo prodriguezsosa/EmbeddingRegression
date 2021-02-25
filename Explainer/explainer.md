@@ -30,7 +30,7 @@ Unfortunately, the averaging approach does not quite work in practice. In partic
 
 ## 3. Embeddings in Regression
 
-Usually in social science, if we want to measure how members of different groups differ with respect to some outcome, we run a regression of the following form:
+Usually in social science, if we want to measure how members of different groups differ with respect to some outcome, we run a [(linear) regression](https://en.wikipedia.org/wiki/Linear_regression) of the following form:
 
 Y = &beta;<sub>0</sub> + &beta;<sub>1</sub> X<sub>1</sub> + error
 
