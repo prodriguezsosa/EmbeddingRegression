@@ -1,6 +1,6 @@
 # Embedding Regression: A Non-Technical Explainer
 
-Our [paper](https://github.com/prodriguezsosa/EmbeddingRegression/blob/main/Paper/RodriguezSpirlingStewart_EmbedRegression.pdf) is technical in places, but the central ideas are simple and straightforward.  Below we lay out a non-technical account of what we do for a social science audience potentially unfamiliar with embeddings.  Below each section, you will find a "too long, didn't read" summary.  
+Our [paper](https://github.com/prodriguezsosa/EmbeddingRegression/blob/main/Paper/RodriguezSpirlingStewart_EmbedRegression.pdf) is technical in places, but the central ideas are simple and straightforward. Here we give a non-technical account for a social science audience potentially unfamiliar with embeddings.  Below each section, you will find a "too long, didn't read" summary.  
 
 
 ## 1. Meaning as Context
@@ -13,7 +13,7 @@ There are two immediate observations here. First, for this to work, some things 
 
 How can we be more formal about this idea of meaning? How can we model word use in a way that automatically gives us this intuitive understanding of context, and similarity or difference? The answer in recent time is "word embeddings."
 
-**BOTTOM LINE: the context of a word tells us about its meaning**
+**tl;dr: the context of a word tells us about its meaning**
 
 ## 2. Embeddings as Meanings
 
@@ -25,7 +25,7 @@ What should we do about this problem of generating embeddings? One possibility i
 
 Unfortunately, the averaging approach does not quite work in practice. In particular, one has to reweight the other vectors according to their frequency in the corpus: essentially very common words (like "and" and "the") do not help much, and need those embeddings need be weighted down when one takes the average. This observation is made by Khodak et al. Those authors solve this problem by showing how to estimate a re-weighting matrix for the entire corpus, quickly and efficiently. Once one has this matrix, simply multiplying it by the embeddings of the context words (the embedding vectors of "dinner" and "ketchup" etc) will yield a high quality "a la carte" embedding for the word of interest. As we will now see, this is very helpful for problems in which one wants to understand how different groups understand words differently.
 
-**BOTTOM LINE: we can measure the context of a word using a word embedding. If we do not have an embedding for a particular (rare) word, we can get one by taking the weighted average of the embeddings around it in text.**
+**tl;dr: we can measure the context of a word using a word embedding. If we do not have an embedding for a particular (rare) word, we can get one by taking the weighted average of the embeddings around it in text.**
 
 
 ## 3. Embeddings in Regression
@@ -40,7 +40,7 @@ To extend our running example, suppose we have a large number of American and Br
 
 The problem now is an obvious one: the (linear) multiple regression framework above accepts a single outcome value for each observation. But embeddings are long: as we said, typically vectors with length of 100 or 300. The solution is to move to a *multivariate* regression framework, common in psychology when one has multiple responses. The key idea is that, now, the dimensions of the beta coefficient also expand: it is the same length as the vectors we are using for the embeddings themselves. Running this regression is now very fast and straightforward, but some care is required in interpreting its results.
 
-**BOTTOM LINE: we put things into a *multivariate* regression by making each observation of the data an embedding (as the outcome), with the group membership (as the predictor, or covariate).**
+**tl;dr: we put things into a *multivariate* regression by making each observation of the data an embedding (as the outcome), with the group membership (as the predictor, or covariate).**
 
 ## 4. Our Approach: ConText
 
@@ -50,7 +50,7 @@ This will not work here, for two reasons. First, because as we said, we have a v
 
 This entire approach, we refer to as our ConText (a la [C]arte [on] Text) model. 
 
-**BOTTOM LINE: our ConText regression approach to producing coefficient norms allows us to make statements about statistical significance and p-values. In this way one can do hypothesis tests.**
+**tl;dr: our ConText regression approach to producing coefficient norms allows us to make statements about statistical significance and p-values. In this way one can do hypothesis tests.**
 
 ## 5. Some Results: Congressional Meaning
 
