@@ -76,7 +76,7 @@ It it also easy to give the "nearest neighbors" of any term for the two differen
 | enacted | enact |
 | legislation | enacting |
 | illegals | reforming |
-| enforcement | immigration |
-| enact | entitlement |
-| naturalization | enacted |
-| circumvented | reforms |
+| enforcement | entitlement |
+| enact | enacted |
+| naturalization | reforms |
+| circumvented | bipartisan |
