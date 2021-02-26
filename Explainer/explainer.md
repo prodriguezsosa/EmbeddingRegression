@@ -68,3 +68,15 @@ We find this to be true, and the figure below presents the normed coefficients.
 It it also easy to give the "nearest neighbors" of any term for the two different groups. And we do that in the table below.
 
 
+| Republicans | Democrats |
+| --- | ----------- |
+| laws | reform |
+| enacting | legislation |
+| enforcing | overhaul |
+| enacted | enact |
+| legislation | enacting |
+| illegals | reforming |
+| enforcement | immigration |
+| enact | entitlement |
+| naturalization | enacted |
+| circumvented | reforms |
