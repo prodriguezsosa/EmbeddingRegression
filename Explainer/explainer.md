@@ -62,7 +62,7 @@ Just as one example of what the ConText model can do, suppose we wanted understa
 
 We find this to be true, and the figure below presents the normed coefficients. 
 
-<img align="right" src="party_differences.png" width=240 title="Controversial and not so controversial words (Congressional Record Daily Corpus, 2009 - 2016)"> 
+<img align="center" src="party_differences.png" width=340 title="Controversial and not so controversial words (Congressional Record Daily Corpus, 2009 - 2016)"> 
 
 
 It it also easy to give the "nearest neighbors" of any term for the two different groups. And we do that in the table below.
