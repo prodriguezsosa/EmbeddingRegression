@@ -61,13 +61,12 @@ This entire approach, we refer to as our ConText (a la [C]arte [on] Text) model.
 Just as one example of what the ConText model can do, suppose we wanted understand how Congressional Democrats and Republicans differ in their understanding of "immigration". As we noted above, we obviously cannot know in a "deep" sense whether what they mean by the concept varies across parties. But we can look at *use* patterns, and make inference from those. We can do this for any word, and our priors are naturally that for more politically controversial words, the parties differ in way that is less true of function words like "the" or "and".
 
 We find this to be true, and the figure below presents the normed coefficients. 
+<p align="center">
+<img align="center" src="party_differences.png" width=340 title="Controversial and not so controversial words (Congressional Record Daily Corpus, 2009 - 2016)"> 
+</p>
+Notice that the function words ("also", "but", "and") don't really differ across the parties, but the other political words---"abortion", "marriage", "immigration"---certainly do.  Comparing the norms (the heights of the bars), we see that "immigration" is the most different across Republicans and Democrats.  How do they differ, substantively?  To get a sense of this we can look at the  *nearest neighbors* of  "immigation" for the two different groups. And we do that in the table below.  Here, the nearest neighbors are literally the vectors (the embeddings of the words) closest to our estimates of how the Republicans and Democrats use "immigration"
 
-<img align="right" src="party_differences.png" width=340 title="Controversial and not so controversial words (Congressional Record Daily Corpus, 2009 - 2016)"> 
-
-
-It it also easy to give the "nearest neighbors" of any term for the two different groups. And we do that in the table below.
-
-
+<p align="center">
 | Republicans | Democrats |
 | --- | ----------- |
 | laws | reform |
@@ -80,3 +79,6 @@ It it also easy to give the "nearest neighbors" of any term for the two differen
 | enact | enacted |
 | naturalization | reforms |
 | circumvented | bipartisan |
+</p>
+
+Notice that Democrats understand the issue in terms of "bipartisan" legislative "reform".  Whereas Republicans speak of "illegals" and the importance of "enforcement".
