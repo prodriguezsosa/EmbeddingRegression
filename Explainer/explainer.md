@@ -66,7 +66,7 @@ We find this to be true, and the figure below presents the normed coefficients.
 </p>
 Notice that the function words ("also", "but", "and") don't really differ across the parties, but the other political words---"abortion", "marriage", "immigration"---certainly do.  Comparing the norms (the heights of the bars), we see that "immigration" is the most different across Republicans and Democrats.  How do they differ, substantively?  To get a sense of this we can look at the  *nearest neighbors* of  "immigation" for the two different groups. And we do that in the table below.  Here, the nearest neighbors are literally the vectors (the embeddings of the words) closest to our estimates of how the Republicans and Democrats use "immigration"
 
-<p align="center">
+<center>
   
 | Republicans | Democrats |
 | --- | ----------- |
@@ -81,6 +81,6 @@ Notice that the function words ("also", "but", "and") don't really differ across
 | naturalization | reforms |
 | circumvented | bipartisan |
 
-</p>
+</center>
 
 Notice that Democrats understand the issue in terms of "bipartisan" legislative "reform".  Whereas Republicans speak of "illegals" and the importance of "enforcement".
