@@ -6,6 +6,8 @@ Paper and related materials for [Rodriguez](http://prodriguezsosa.com/), [Spirli
 
 You can find the paper [here](https://github.com/prodriguezsosa/EmbeddingRegression/blob/master/Paper/RodriguezSpirlingStewart_EmbedRegression.pdf) and a non-technical explainer [here](https://github.com/prodriguezsosa/EmbeddingRegression/blob/master/Explainer/explainer.md).
 
-Comments are very welcome!
+R software for fitting our models is [here](https://github.com/prodriguezsosa/conText), along with a vignette and links to data sets.
+
+Comments are very welcome: please send us an email, or open an "Issue" here.
 
 
