@@ -1,4 +1,4 @@
-# Embedding Regression: Models for Context-Specific Description and Inference in Political Science
+# Embedding Regression: Models for Context-Specific Description and Inference
 
 Paper and related materials for [Rodriguez](http://prodriguezsosa.com/), [Spirling](http://www.arthurspirling.org) and [Stewart](https://scholar.princeton.edu/bstewart/home) (2021). The abstract for the paper is as follows
 
