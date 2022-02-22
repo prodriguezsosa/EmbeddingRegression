@@ -1,6 +1,6 @@
 # Embedding Regression: Models for Context-Specific Description and Inference
 
-Paper and related materials for [Rodriguez](http://prodriguezsosa.com/), [Spirling](http://www.arthurspirling.org) and [Stewart](https://scholar.princeton.edu/bstewart/home) (2021). The abstract for the paper is as follows
+Paper and related materials for [Rodriguez](http://prodriguezsosa.com/), [Spirling](http://www.arthurspirling.org) and [Stewart](https://scholar.princeton.edu/bstewart/home) (2022). The abstract for the paper is as follows
 
 >Social scientists commonly seek to make statements about how a word’s use varies
 over circumstances—whether that be time, partisan identity, or some other documentlevel covariate. A promising avenue is the use of domain-specific word embeddings, that
